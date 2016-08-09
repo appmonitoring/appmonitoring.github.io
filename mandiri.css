@@ -1,0 +1,73 @@
+body {
+  /*padding-top: 100px;*/
+}
+
+.banner {
+	top: 0;
+	 background-color: #fff;
+
+ width: 100%;
+     padding-right: 110px;
+    padding-left: 130px;
+}
+.banner-top {
+	margin-top: 10px;
+	color: #004d3c;
+}
+.banner-down {
+	margin-top: 5px;
+	color: #004d3c;
+	font-weight: 600;
+}
+.mandiri {
+    background-color: #005643;
+    border-color: #004d3c;
+    border-radius: 0;
+}
+
+.border-yellow {
+	    border-top: 8px solid #FFC107;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+	color: #fff;
+    background-color: #004d3c;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #004d3c;
+}
+
+.navbar-right {
+    float: right!important;
+     margin-right: 0px; 
+}	
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #FFC107;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.jumbotron {
+background: #005643;
+color: #FFF;
+border-radius: 0px;
+}
+.jumbotron-sm { padding-top: 24px;
+padding-bottom: 24px; }
+.jumbotron small {
+color: #FFF;
+}
+.h1 small {
+font-size: 24px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+   background-color: #ccc;
+}
