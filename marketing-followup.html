@@ -54,7 +54,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="home.html">Home</a>
+          <a class="navbar-brand" href="marketing-home.html">Home</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -62,17 +62,17 @@
             <li class="active dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pipeline <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                 <li><a href="tambah.html">Isi Pipeline</a></li>
+                <li><a href="marketing-tambah.html">Isi Pipeline</a></li>
                 
                 <li class="dropdown-header"></li>
                 
-                <li><a href="list.html">List Pipeline</a></li>
+                <li><a href="marketing-list.html">List Pipeline</a></li>
               </ul>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="active dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrator <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mrs. Mega <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="index.html">Keluar</a></li>
                 
@@ -85,69 +85,53 @@
     </div>
     </div>
 
-    <div class="container">
-      
+   <div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form>
+                <div class="row">
 
-          <div class="bs-example" data-example-id="striped-table">
-            <table class="table table-striped">
-              <thead style="background-color: #004d3c;color: #fff;">
-              <tr>
-                <th>No</th> 
-                <th>Company Name</th> 
-                <th>No Rekening/CIF</th> 
-                <th>Posisi Saldo</th> 
-                <th>Kode</th> 
-                <th>Follow Up 1</th> 
-                <th>Follow Up 2</th> 
-                <th>Follow Up 3</th> 
-                <th>Follow Up 4</th> 
-                <th>Action</th> 
-              </tr> 
-              </thead> 
-              <tbody> 
-                <tr> 
-                  <th scope="row">1</th> 
-                    <td>Mark</td> 
-                    <td>2346445645</td> 
-                    <td>1 Juta</td> 
-                    <td>Perorangan</td> 
-                    <td>x</td> 
-                    <td>x</td> 
-                    <td>x</td> 
-                    <td>x</td> 
-                    <td><button type="button" class="btn btn-primary btn-sm">edit</button></td> 
-                </tr>
-                <tr> 
-                  <th scope="row">2</th> 
-                    <td>Taylor</td> 
-                    <td>2346445645</td> 
-                    <td>1 Juta</td> 
-                    <td>Perorangan</td> 
-                    <td>x</td> 
-                    <td>x</td> 
-                    <td>x</td> 
-                    <td>x</td> 
-                    <td><button type="button" class="btn btn-primary btn-sm">edit</button></td> 
-                </tr>
-                <tr> 
-                  <th scope="row">3</th> 
-                    <td>Otwell</td> 
-                    <td>5675675</td> 
-                    <td>2 Juta</td> 
-                    <td>Perorangan</td> 
-                    <td>x</td> 
-                    <td>x</td> 
-                    <td>x</td> 
-                    <td>x</td> 
-                    <td><button type="button" class="btn btn-primary btn-sm">edit</button></td> 
-                </tr>
-                 
-              </tbody> </table> 
-          </div>
-
-      
-
-    </div> <!-- /container -->
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="name">
+                                Follow Up 1</label>
+                                
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Detail Follow Up 1"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            Save</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+           <div class="panel panel-primary">
+              <div class="panel-heading"><a href="marketing-list.html" style="text-decoration: none;color: #fff;"><i class="glyphicon glyphicon-chevron-left"></i>kembali</a> <span class="pull-right">Nasabah</span></div>
+              <div class="panel-body">
+                <ul class="list-unstyled">
+                  <li>Company Name : <strong>Mark</strong></li>
+                  <li>Employe Size : <strong>Mark</strong></li>
+                  <li>Company Name : <strong>Mark</strong></li>
+                  <li>Nomor Telepon : <strong>Mark</strong></li>
+                  <li>Alamat : <strong>Mark</strong></li>
+                  <br>
+                  <li>No Rekening/CIF : <strong>Mark</strong></li>
+                  <li>Posisi Saldo : <strong>Mark</strong></li>
+                  <li>Eksisting / Non Eksisting : <strong>Mark</strong></li>
+                  <li>Wilayah : <strong>Mark</strong></li>
+                  <li>Kode : <strong>Mark</strong></li>
+                  <li>Prioritas : <strong>Mark</strong></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
     <!-- Bootstrap core JavaScript
