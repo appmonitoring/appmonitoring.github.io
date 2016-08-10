@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="mandiri.css" rel="stylesheet">
+    <link href="timeline.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -62,14 +63,14 @@
             <li class="active dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pipeline <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                 <li><a href="marketing-tambah.html">Isi Pipeline</a></li>
+                <li><a href="marketing-tambah.html">Isi Pipeline</a></li>
                 
                 <li class="dropdown-header"></li>
                 
                 <li><a href="marketing-list.html">List Pipeline</a></li>
                 <li class="dropdown-header"></li>
                 
-                <li><a href="marketing-feedback-list.html">Feedback</a></li>
+                <li><a href="marketing-list.html">Feedback</a></li>
               </ul>
             </li>
           </ul>
@@ -89,70 +90,69 @@
     </div>
 
     <div class="container">
-      
 
-          <div class="bs-example" data-example-id="striped-table">
-            <table class="table table-striped">
-              <thead style="background-color: #004d3c;color: #fff;">
-              <tr>
-                <th>No</th> 
-                <th>Company Name</th> 
-                <th>No Rekening/CIF</th> 
-                <th>Posisi Saldo</th> 
-                <th>Kode</th> 
-                <th>Follow Up 1</th> 
-                <th>Follow Up 2</th> 
-                <th>Follow Up 3</th> 
-                <th>Follow Up 4</th> 
-                <th>Action</th> 
-              </tr> 
-              </thead> 
-              <tbody> 
-                <tr> 
-                  <th scope="row">1</th> 
-                    <td>Mark</td> 
-                    <td>2346445645</td> 
-                    <td>1 Juta</td> 
-                    <td>Perorangan</td> 
-                    <td>05 Jan 2016 <button type="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></button></td> 
-                    <td><a href="marketing-followup.html" class="btn btn-primary btn-xs">Isi <i class="glyphicon glyphicon-pencil"></i></a></td> 
-                    <td>-</td> 
-                    <td>-</td> 
-                    <td><button type="button" class="btn btn-primary btn-xs">edit</button></td> 
-                </tr>
-                <tr> 
-                  <th scope="row">2</th> 
-                    <td>Taylor</td> 
-                    <td>2346445645</td> 
-                    <td>1 Juta</td> 
-                    <td>Perorangan</td> 
-                    <td>01 Jan 2016 
-                    <a href="marketing-feedback.html" class="btn btn-warning btn-xs" title="feedback"><i class="glyphicon glyphicon glyphicon-comment"></i></a>
-                    </td> 
-                    <td>11 Jan 2016 <button type="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></button></td> 
-                    <td><a href="marketing-followup.html" class="btn btn-primary btn-xs">Isi <i class="glyphicon glyphicon-pencil"></i></a></td> 
-                    <td>-</td> 
-                    <td><button type="button" class="btn btn-primary btn-xs">edit</button></td> 
-                </tr>
-                <tr> 
-                  <th scope="row">3</th> 
-                    <td>Otwell</td> 
-                    <td>5675675</td> 
-                    <td>2 Juta</td> 
-                    <td>Perorangan</td> 
-                    <td><a href="marketing-followup.html" class="btn btn-primary btn-xs">Isi <i class="glyphicon glyphicon-pencil"></i></a></td> 
-                    <td>-</td> 
-                    <td>-</td> 
-                    <td>-</td> 
-                    <td><button type="button" class="btn btn-primary btn-xs">edit</button></td> 
-                </tr>
-                 
-              </tbody> </table> 
-          </div>
+    <!-- Page header -->
+    <div class="page-header">
+        <h2>Feedback History <small></h2>
+    </div>
+    <!-- /Page header -->
 
-      
+    <!-- Timeline -->
+    <div class="timeline">
+    
+        <!-- Line component -->
+        <div class="line text-muted"></div>
 
-    </div> <!-- /container -->
+        <!-- Separator -->
+        <div class="separator text-muted">
+            <time>15 Januari 2016</time>
+        </div>    
+    
+        <!-- Panel -->
+        <article class="panel panel-primary">
+    
+            <!-- Icon -->
+            <div class="panel-heading icon">
+                <i class="glyphicon glyphicon-comment"></i>
+            </div>
+            <!-- /Icon -->
+    
+            <!-- Heading -->
+            <div class="panel-heading">
+                <h2 class="panel-title">Mr XYZ <i class="glyphicon glyphicon-arrow-right"> </i> Follow Up 1 (Taylor)</h2>
+            </div>
+            <!-- /Heading -->
+    
+            <!-- Body -->
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-6">
+                    <div class="bs-callout bs-callout-info" id="callout-type-dl-truncate">
+                      <p>Horizontal description lists will truncate terms that are too long to fit in the left column with <code>text-overflow</code>. In narrower viewports, they will change to the default stacked layout.</p> 
+                    </div>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-unstyled"> <li>Lorem ipsum dolor sit amet</li> <li>Consectetur adipiscing elit</li> <li>Integer molestie lorem at massa</li> <li>Facilisis in pretium nisl aliquet</li> <li>Nulla volutpat aliquam velit <ul> <li>Phasellus iaculis neque</li> <li>Purus sodales ultricies</li> <li>Vestibulum laoreet porttitor sem</li> <li>Ac tristique libero volutpat at</li> </ul> </li> <li>Faucibus porta lacus fringilla vel</li> <li>Aenean sit amet erat nunc</li> <li>Eget porttitor lorem</li> </ul>
+                </div>
+              </div>
+                
+            </div>
+            <!-- /Body -->
+    
+            <!-- Footer -->
+            <div class="panel-footer">
+                <small><a href="marketing-feedback.html">Detail Feedback</a></small>
+            </div>
+            <!-- /Footer -->
+    
+        </article>
+        <!-- /Panel -->        
+    
+    </div>
+    <!-- /Timeline -->
+
+</div>
+</div> <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript
