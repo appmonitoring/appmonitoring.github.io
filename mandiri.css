@@ -93,3 +93,8 @@ font-size: 24px;
 .bs-callout-info {
     border-left-color: #1b809e;
 }
+
+#status {
+    background-color: #fff;
+    border-top: 1px solid #fff;
+}

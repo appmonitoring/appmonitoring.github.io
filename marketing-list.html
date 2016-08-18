@@ -91,8 +91,19 @@
     <div class="container">
 
     <div class="row">
-      <div class="col-xs-8">
+      <div class="col-xs-6">
         <h4>List Pipeline</h4>
+      </div>
+      <div class="col-xs-2">
+        <div class="form-group">
+          <select class="form-control">
+              <option>semua</option>
+              <option>on proses</option>
+              <option>tidak cair</option>
+              <option>cair</option>
+            </select>
+        </div>
+        
       </div>
       <div class="col-xs-4">
           <form>
@@ -116,8 +127,8 @@
                 <th>No</th> 
                 <th>Company Name</th> 
                 <th>No Rekening/CIF</th> 
-                <th>Posisi Saldo</th> 
                 <th>Kode</th> 
+                <th>Status</th> 
                 <th>Follow Up 1</th> 
                 <th>Follow Up 2</th> 
                 <th>Follow Up 3</th> 
@@ -130,43 +141,67 @@
                   <th scope="row">1</th> 
                     <td>Mark</td> 
                     <td>2346445645</td> 
-                    <td>1 Juta</td> 
                     <td>Perorangan</td> 
+                    <td id="status">on proses</td> 
                     <td>05 Jan 2016 <button type="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></button></td> 
                     <td><a href="marketing-followup.html" class="btn btn-primary btn-xs">Isi <i class="glyphicon glyphicon-pencil"></i></a></td> 
                     <td>-</td> 
                     <td>-</td> 
-                    <td><button type="button" class="btn btn-primary btn-xs">edit</button></td> 
+                    <td><a href="marketing-detail-nasabah.html" class="btn btn-primary btn-xs">detail</a></td> 
                 </tr>
                 <tr> 
                   <th scope="row">2</th> 
                     <td>Taylor</td> 
                     <td>2346445645</td> 
-                    <td>1 Juta</td> 
                     <td>Perorangan</td> 
+                    <td id="status"><i class="glyphicon glyphicon-remove-sign text-danger"></i> tidak cair</td> 
                     <td>01 Jan 2016 
                     <a href="marketing-feedback.html" class="btn btn-warning btn-xs" title="feedback"><i class="glyphicon glyphicon glyphicon-comment"></i></a>
                     </td> 
                     <td>11 Jan 2016 <button type="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-search"></i></button></td> 
-                    <td><a href="marketing-followup.html" class="btn btn-primary btn-xs">Isi <i class="glyphicon glyphicon-pencil"></i></a></td> 
                     <td>-</td> 
-                    <td><button type="button" class="btn btn-primary btn-xs">edit</button></td> 
+                    <td>-</td> 
+                    <td><a href="marketing-detail-nasabah.html" class="btn btn-primary btn-xs">detail</a></td> 
                 </tr>
                 <tr> 
                   <th scope="row">3</th> 
                     <td>Otwell</td> 
                     <td>5675675</td> 
-                    <td>2 Juta</td> 
                     <td>Perorangan</td> 
+                    <td id="status"><i class="glyphicon glyphicon-ok-sign text-success"></i> cair</td> 
+                    <td>01 Feb 2016 
+                    <a href="marketing-feedback.html" class="btn btn-warning btn-xs" title="feedback"><i class="glyphicon glyphicon glyphicon-comment"></i></a></td> 
+                    <td>10 Feb 2016 
+                    <a href="marketing-feedback.html" class="btn btn-warning btn-xs" title="feedback"><i class="glyphicon glyphicon glyphicon-comment"></i></a></td> 
+                    <td>20 Feb 2016 
+                    <a href="marketing-feedback.html" class="btn btn-warning btn-xs" title="feedback"><i class="glyphicon glyphicon glyphicon-comment"></i></a></td> 
+                    <td>-</td> 
+                    <td><a href="marketing-detail-nasabah.html" class="btn btn-primary btn-xs">detail</a></td> 
+                </tr>
+
+                <tr> 
+                  <th scope="row">3</th> 
+                    <td>Daboribo</td> 
+                    <td>12345645</td> 
+                    <td>Perorangan</td> 
+                    <td id="status">on proses</td> 
                     <td><a href="marketing-followup.html" class="btn btn-primary btn-xs">Isi <i class="glyphicon glyphicon-pencil"></i></a></td> 
                     <td>-</td> 
                     <td>-</td> 
                     <td>-</td> 
-                    <td><button type="button" class="btn btn-primary btn-xs">edit</button></td> 
+                    <td><a href="marketing-detail-nasabah.html" class="btn btn-primary btn-xs">detail</a></td> 
                 </tr>
                  
               </tbody> </table> 
           </div>
+
+
+          <br><br><br><br><br>
+          <pre>
+            if (status == tidak cair ||  status == cair) {
+              button link isi follow up ganti jadi garis/strip (-);
+            }
+          </pre>
 
       
 
